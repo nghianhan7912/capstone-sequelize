@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "11471a5d-4c53-4587-907d-c77234e3f092",
+		"name": "Capstone_Sequelize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28190389"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"nhan123@gmail.com\",\n    \"mat_khau\" : \"abc123\",\n    \"ho_ten\" : \"nhan nè\",\n    \"tuoi\" : 17\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"nhan123@gmail.com\",\n    \"mat_khau\" : \"xyz123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFdWSGt6Lk5YMjhaUnFLQkt0Rjljd3V5QkxMNW02Skx2QTFlVHRmaWRWcjh1WUlNNjVqUDZLIiwiaG9fdGVuIjoibmhhbiBuw6giLCJ0dW9pIjoxNywiYW5oX2RhaV9kaWVuIjoiIn19LCJpYXQiOjE2OTc0MjI0NzMsImV4cCI6MTcyODk4MDA3M30.8qqi2bxTtDwCGjQrYlFoz3cOWUXMsUpkgJ981z5GvFs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"noi_dung\" : \"hahahaa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/detailImage/post-comment-Image/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"detailImage",
+						"post-comment-Image",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ten_hinh\" : \"test1234\",\n    \"duong_dan\" : \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLiof7TH5LTNCsmB1vvkD3YQL9lA1G8PS3zR-viLmQwgeL1yBu3R0ZPorCUUlGNTLq5tw&usqp=CAU\",\n    \"mo_ta\": \"abc5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFdWSGt6Lk5YMjhaUnFLQkt0Rjljd3V5QkxMNW02Skx2QTFlVHRmaWRWcjh1WUlNNjVqUDZLIiwiaG9fdGVuIjoibmhhbiBuw6giLCJ0dW9pIjoxNywiYW5oX2RhaV9kaWVuIjoiIn19LCJpYXQiOjE2OTc0MjI0NzMsImV4cCI6MTcyODk4MDA3M30.8qqi2bxTtDwCGjQrYlFoz3cOWUXMsUpkgJ981z5GvFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/image/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"image",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image By Image ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/image/delete-image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"image",
+						"delete-image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFdWSGt6Lk5YMjhaUnFLQkt0Rjljd3V5QkxMNW02Skx2QTFlVHRmaWRWcjh1WUlNNjVqUDZLIiwiaG9fdGVuIjoibmhhbiBuw6giLCJ0dW9pIjoxNywiYW5oX2RhaV9kaWVuIjoiIn19LCJpYXQiOjE2OTc0MzgxNzgsImV4cCI6MTcyODk5NTc3OH0.TmPAR0xVn8gVQziwW3I03fIvEcKo650WvoqNWL1tuE4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/get-images-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"get-images-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image By Name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/get-images-list-by-name?nameImage=s",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"get-images-list-by-name"
+					],
+					"query": [
+						{
+							"key": "nameImage",
+							"value": "s"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Info Image And User By Id Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/detailImage/detail-Image/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"detailImage",
+						"detail-Image",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment By ID Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/detailImage/comment-Image/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"detailImage",
+						"comment-Image",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Save Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/detailImage/check-Image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"detailImage",
+						"check-Image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/detailImage/save-image/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"detailImage",
+						"save-image",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Saved Image By UserId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/image/saved-image/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"image",
+						"saved-image",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Created Image By User ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFVVOGJSMUZWcU1Sd3pQeFhaTGpSYXU5L1VNeC4zN1A4eGtsQVAudHZxWlR3NEtvYzVvQU91IiwiaG9fdGVuIjoiaGloaSIsInR1b2kiOjI4LCJhbmhfZGFpX2RpZW4iOiIifX0sImlhdCI6MTY5NzQ0MTE0MiwiZXhwIjoxNzI4OTk4NzQyfQ.Dr44v6Dm9HdKxD2wDYWPiPpPZ8_OY_rPklzFrpstPS0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/image/created-image/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"image",
+						"created-image",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "abc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImNoZWNrRW1haWwiOnsibmd1b2lfZHVuZ19pZCI6MiwiZW1haWwiOiJuaGFuMTIzQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFdWSGt6Lk5YMjhaUnFLQkt0Rjljd3V5QkxMNW02Skx2QTFlVHRmaWRWcjh1WUlNNjVqUDZLIiwiaG9fdGVuIjoibmhhbiBuw6giLCJ0dW9pIjoxNywiYW5oX2RhaV9kaWVuIjoiIn19LCJpYXQiOjE2OTc0MzgxNzgsImV4cCI6MTcyODk5NTc3OH0.TmPAR0xVn8gVQziwW3I03fIvEcKo650WvoqNWL1tuE4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mat_khau\" : \"xyz123\",\n    \"ho_ten\" : \"hihi\",\n    \"tuoi\" : 28,\n    \"anh_dai_dien\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
