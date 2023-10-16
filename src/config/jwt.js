@@ -13,7 +13,7 @@ export const decodeToken = (token)=>{
 
 export const lockApi = (req,res,next) => {
     try {
-        let {token} =  req.body
+        let token =  req.headers["abc"]
         checkToken(token)
         next()
     } catch (err) {
